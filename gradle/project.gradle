@@ -1,0 +1,11 @@
+apply plugin: JavaPlugin
+
+group = 'nu.mine.mosher.neo4j'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+test {
+    useJUnitPlatform()
+}

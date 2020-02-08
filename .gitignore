@@ -1,0 +1,6 @@
+/.gradle/
+/build/
+/logs/
+/database/
+/store_lock
+/.idea/

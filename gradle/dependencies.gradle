@@ -1,0 +1,17 @@
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.neo4j', name: 'neo4j', version: '3.+'
+    implementation group: 'org.neo4j', name: 'neo4j-ogm-core', version: '3.+'
+
+    // use embedded driver only for integration testing
+    implementation group: 'org.neo4j', name: 'neo4j-ogm-embedded-driver', version: '3.+'
+
+    runtime group: 'org.slf4j', name: 'slf4j-simple', version: 'latest.integration'
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: 'latest.release'
+    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: 'latest.release'
+}
